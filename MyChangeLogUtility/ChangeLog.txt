@@ -1,0 +1,7 @@
+
+	ChangeLog MyChangeLogUtility
+	for WPF
+	
+	Version 0.0.0.0 01.04.2015
+	
+	- Start

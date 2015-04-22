@@ -1,0 +1,26 @@
+﻿<Window x:Class="ChangeLogUtilityDll.ChangeLogTxtToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ChangeLogTxtToolWindow" Height="338" Width="612">
+    <Grid Background="#FFB8B8B9">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="150*"/>
+    		<RowDefinition Height="157*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="149*"/>
+    		<ColumnDefinition Width="153*"/>
+    	</Grid.ColumnDefinitions>
+        <Label Name="LableBackgroundDisplayText"  Content="ChangeLog" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-184,-67,-76.5,0" FontFamily="Segoe UI Black" Foreground="#FF86062C" FontSize="64" Height="97.687" Width="373.5" Opacity="0.1" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1">
+        	<Label.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform Angle="-36"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Label.RenderTransform>
+        </Label>
+        <FlowDocumentReader x:Name="FlowDocReader" Background="#FF2B3B4B" SelectionBrush="#FF86062C" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
