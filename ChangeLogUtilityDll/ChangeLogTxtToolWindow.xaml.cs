@@ -27,7 +27,7 @@ namespace ChangeLogUtilityDll
         public ChangeLogTxtToolWindow(object parent)
         {
             InitializeComponent();
-            ((ContentControl)parent).Unloaded += new RoutedEventHandler(HaldelParentConsing);
+            ((ContentControl)parent).Unloaded += new RoutedEventHandler(HaldelParentCloseing);
             BackgroundDisplayText = "ChangeLog";
         }
 
@@ -49,11 +49,11 @@ namespace ChangeLogUtilityDll
         #region Other Events
 
         /// <summary>
-        /// ParentConsing
+        /// HaldelParentCloseing
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        void HaldelParentConsing(object sender, EventArgs e)
+        void HaldelParentCloseing(object sender, EventArgs e)
         {
             Close();
         }
